@@ -1,8 +1,20 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { authentication } from "../../lib/firebase-config";
+import { TwitterAuthProvider, signInWithPopup } from "firebase/auth";
 
 const LoginPage = () => {
   const router = useRouter();
+
+  const signInWithTwitter = () => {
+    const provider = new TwitterAuthProvider();
+    signInWithPopup(authentication, provider)
+    .then((res) => {
+      console.log(res)
+    }).catch((error) => {
+      console.log(error)
+    })
+  }
 
   return (
     <>
@@ -32,7 +44,7 @@ const LoginPage = () => {
         <section className="h-[100vh] bg-[white]/[0.5] flex items-center justify-center md:w-[50%] md:relative over:w-full over:absolute">
           <button
             className="p-1 flex bg-[white] items-center border-[1px] space-x-2"
-            onClick={() => router.push("/homepage")}
+            onClick={signInWithTwitter}
           >
             <img
               src="/images/icons/twitter.svg"
