@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { authentication } from "../../lib/firebase-config";
 import { TwitterAuthProvider, signInWithPopup } from "firebase/auth";
+import TwitterLogin from "react-twitter-login";
 
 const LoginPage = () => {
   const router = useRouter();
@@ -15,6 +16,10 @@ const LoginPage = () => {
       console.log(error)
     })
   }
+
+  const authHandler = (err, data) => {
+    console.log(err, data);
+  };
 
   return (
     <>
@@ -54,6 +59,11 @@ const LoginPage = () => {
             />
             <p>Sign In with Twitter</p>
           </button>
+          <TwitterLogin
+      authCallback={authHandler}
+      consumerKey={"coWQgdn7eUtS0InoHSj75uAvF"}
+      consumerSecret={"9UIyB6M5i1UHZnHWJu8OgY2ZAo24WfVaYi3DTTEDAEkOS4RR9U"}
+    />
         </section>
       </main>
     </>
