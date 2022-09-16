@@ -56,7 +56,7 @@ const LoginPage = () => {
           />
           <p className="text-[14px]">© 2022 Twitter, Inc.</p>
         </section>
-        <section className="h-[100vh] bg-[white]/[0.5] flex items-center justify-center md:w-[50%] md:relative over:w-full over:absolute">
+        <section className="h-[100vh] bg-[white]/[0.5] flex flex-col items-center justify-center space-y-3 md:w-[50%] md:relative over:w-full over:absolute">
           <button
             className="p-1 flex bg-[white] items-center border-[1px] space-x-2"
             onClick={signInWithTwitter}

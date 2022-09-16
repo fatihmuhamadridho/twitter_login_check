@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id"  dir="ltr"
+      class="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>Twitter / Izinkan aplikasi</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://abs-0.twimg.com/login/tfw-base.3baf723b92aa68729f921c77ca3e3c1315116392.css">
+    <!--[if (IEMobile) & (lt IE 9)]>
+      <link href="https://abs-0.twimg.com/login/phoenix-iemobile.49b26ac21d4736060188b5b79bbabc69ca8ef790.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+        <meta name="mswebdialog-title" content="Twitter"><meta name="mswebdialog-logo" content="https://abs.twimg.com/favicons/win8-auth-60.png"><meta name="mswebdialog-header-color" content="#202020"><meta name="mswebdialog-newwindowurl" content="*">
+
+
+      <script src="//abs-0.twimg.com/login/base.7ced3ee3ff61dadf91a9c9bd7082adc8f158a360.js" type="text/javascript"></script>
+      <script src="//abs-0.twimg.com/login/authorize_page.c4edf9ccaf94a42b6963991691957aaa827aa56b.js" type="text/javascript"></script>
+  </head>
+  
+  
+  <body class="oauth  tfw id logged-out    noloki">
+
+    <div id="header" role="banner">
+      <div class="bar">
+        <h1 class="logo">
+          <a class="alternate-context" href="https://twitter.com/home">Twitter</a>
+        </h1>
+
+        <div id="not-logged-in">
+              <a href="https://twitter.com/signup?context=oauth&amp;oauth_token=1adIbwAAAAABhES6AAABg0P7Axc" class="register alternate-context">Daftar ke Twitter</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="bd" role="main">
+          
+
+
+
+
+    <div class="auth">
+      <h2>Izinkan twitter-login-check mengakses akun Anda?</h2>
+
+      <div class="app-info" role="content-info" tabindex="0">
+  <h3>
+    <img alt="" class="app-icon" src="https://ton.twimg.com/app_icons/oauth_application.png" title="twitter-login-check">
+    twitter-login-check
+  </h3>
+  <dl>
+      <dt class="url">URL Aplikasi</dt>
+      <dd class="url">twitter-login-check.vercel.app/</dd>
+      <dt class="notes">Tentang aplikasi ini</dt>
+      <dd class="notes"><p>This app was created to use the Twitter API.</p></dd>
+
+  </dl>
+</div>
+
+        <form action="https://api.twitter.com/oauth/authenticate" id="oauth_form" method="post" target="_self">
+          <div>
+            <input name="authenticity_token" type="hidden" value="4b8a51b23928b8471be5e8de54466d9c5a92155e">
+            <input name="redirect_after_login" type="hidden" value="https://api.twitter.com/oauth/authenticate?oauth_token=1adIbwAAAAABhES6AAABg0P7Axc">
+          </div>
+
+          <input id="oauth_token" name="oauth_token" type="hidden" value="1adIbwAAAAABhES6AAABg0P7Axc">
+
+            <fieldset class="sign-in">
+  <legend>Masuk ke Twitter</legend>
+  <div class="row user ">
+    <input aria-required="true" autocapitalize="off" autocorrect="off" autofocus="autofocus" class="text" id="username_or_email" name="session[username_or_email]" type="text" placeholder="Nama pengguna/email" value="">
+  </div>
+  <div class="row password ">
+    <input aria-required="true" class="password text"  id="password" name="session[password]" type="password" placeholder="Kata Sandi" value="">
+  </div>
+  <p>
+    <input type="checkbox" name="remember_me" id="remember" value="1">
+    <label for="remember">Ingat saya</label>
+    &middot;
+    <a href="https://twitter.com/account/resend_password" class="alternate-context" target="_blank">Lupa kata sandi?</a>
+  </p>
+    <input type="hidden" name="ui_metrics" autocomplete="off">
+    <script src="https://twitter.com/i/js_inst?c_name=ui_metrics" async></script>
+</fieldset>
+
+
+          <fieldset class="buttons">
+            <legend>Masuk ke twitter-login-check menggunakan akun Anda?</legend>
+            <input type="submit" value="Masuk" class="submit button selected" id="allow">
+
+              <input class="submit button" id="cancel" name="cancel" type="submit" value="Batalkan">
+
+          </fieldset>
+        </form>
+
+      
+<div class="permissions allow">
+  <p><strong>Aplikasi ini akan dapat:</strong></p>
+   <ul class="permissions allow">
+      <li>Melihat Tweet dari timeline Anda (termasuk Tweet yang dilindungi) serta Daftar dan koleksi Anda.</li>
+      <li>Melihat pengaturan akun dan informasi profil Twitter Anda.</li>
+      <li>Melihat akun yang Anda ikuti, bisukan, dan blokir.</li>
+</ul>
+
+
+</div>
+
+
+
+
+      <div>
+  <p><small>Pelajari lebih lanjut izin aplikasi pihak ketiga di <a href="https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps" target="_blank">Pusat Bantuan</a>.</small></p>
+</div>
+
+
+    </div>
+
+    </div>
+
+
+  <div class="footer" role="navigation"><div id="ft">
+    
+        
+  <p class="tip">Sebaiknya tinjau kebijakan privasi dan persyaratan aplikasi untuk memahami bagaimana aplikasi tersebut akan menggunakan data dari akun Twitter Anda. Anda dapat mencabut akses bagi setiap aplikasi kapan saja di bagian <a href="https://twitter.com/settings/applications" target="_blank">Aplikasi dan sesi</a> pada pengaturan akun Twitter Anda.</p>
+  <p><small>Dengan mengizinkan sebuah aplikasi, Anda tetap beroperasi di bawah <a href="https://twitter.com/tos" target="_blank">Persyaratan Layanan</a> Twitter. Secara khusus, beberapa informasi penggunaaan akan dibagikan kembali dengan Twitter. Untuk lebih lanjut, lihat <a href="https://twitter.com/privacy" target="_blank">Kebijakan Privasi</a> kami.</small></p>
+
+
+
+  </div></div>
+
+  </body>
+</html>
